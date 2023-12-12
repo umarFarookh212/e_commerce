@@ -1,0 +1,67 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(142, 159, 180);
+  background-image: url();
+}
+.card{
+  border-top: 8px solid rgb(60, 76, 223);
+  width: 17.5rem;
+  height: 15rem;
+  margin: 3rem 20rem 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+  border-radius: 13px;
+
+}
+.card-body{
+  margin-left: 20px;
+}
+.input{
+  margin: 10px;
+  margin-left: 16px;
+  width: 314px;
+  height: 1.4rem;
+
+}
+input{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  border: 2px solid transparent;
+  border-bottom: 2px solid gainsboro;
+  
+}
+.btnlogin{
+  background-color: rgb(60, 76, 223);
+  border: none;
+  width: 14.6rem;
+  height: 2rem;
+  margin-top: 1.8rem;
+  margin-left: 0.8rem;
+  color:white;
+  border-radius: 5px;
+}
+.btnlogin:active{
+  background-color: rgb(9, 20, 124);
+}
+.register{
+  margin-left: 20rem;
+  background-color: white;
+  height: 3rem;
+  width: 17.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8px solid rgb(60, 76, 223);
+  border-radius: 13px;
+  font-family: Cambria, Cochin;
+}
+a{
+  text-decoration: none;
+}

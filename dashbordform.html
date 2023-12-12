@@ -1,0 +1,52 @@
+<?php
+// session_start();
+// if(!empty($_SESSION['email']) || !empty($_SESSION['password'])){
+//     echo "HI! Welcome to Dashboard!";
+?>
+<!-- <div class= "card"> -->
+<!-- <a href="logout.php">Logout Here!</a> -->
+</button>
+<?php
+// }
+// else {
+//    header("location:/projects/project2/registerform.php");
+// }
+?>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="nav-header">
+        <p>Company Name</p>
+        <p></p><i>Good Morning Umar</i></p>
+        <p >Dashboard</p>
+        <div class="nav-search">
+            <input type="text" id="search"  placeholder="Search">
+            <button type="submit" class="submitBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div class="body">
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="body-main">
+            <div class="graph"></div>
+            <div class="product">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

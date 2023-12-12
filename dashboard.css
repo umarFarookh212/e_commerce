@@ -1,0 +1,78 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: border-box;
+}
+.nav-header{
+  background-color: rgb(7, 19, 92);
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.91rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.nav-search{
+  display: flex;
+  border: none;
+  height: 1.4rem;
+  margin-right: 10px;
+}
+.submitBtn{
+  color: rgb(22, 107, 192);
+  background-color: white;
+  border: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 1.2rem;
+}
+#search{
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 01rem;
+
+}
+.navbar{
+  background-color: rgb(7, 19, 92);
+  height: 100%;
+  width:18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:1rem;
+}
+a{
+  color: white;
+  text-decoration:none;
+  padding: 1rem;
+  border: 1px solid transparent;
+}
+a:hover{
+  border-left: 0.2rem solid white;
+  padding-left: 2rem;
+}
+.body{
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+.body-main{
+  background-color: rgb(153, 26, 26);
+  background-image: url("project2/pictures/graph.png");
+  height: 100%;
+  width:90%;
+  background-size: cover;
+}
+.graph{
+  background-image: url("project2/pictures/graph.png");
+  background-size:cover;
+  height: 50px;
+  width: 100%;
+
+}
