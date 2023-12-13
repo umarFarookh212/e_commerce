@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="loginform.css">
 </head>
 
-<body>
+<body class="img">
 <div class="card">
     <div class="card-header"><h2>Login</h2></div>
         <div class= "card-body">
-        <form action="logincontrol.php" id= "login" method= "POST">
+        <form action="loginformcontrol.php" id= "login" method= "POST">
         <input type="text" name= "email" id= "email" placeholder= "Email Id" class= "input">
-        <input type="password" name= "password"  id= "password" placeholder= "Enter password" class= "input">
+        <input type="password" name= "password"  id= "password" placeholder= "Password" class= "input">
         <input type="button" onclick= "test();" value= "Login" class="btnlogin">
         </form>
     </div>
