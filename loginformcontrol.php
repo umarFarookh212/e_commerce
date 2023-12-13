@@ -1,32 +1,32 @@
 <?php
 session_start();
 $servername= "localhost";
-$username= "root";
-$password= "";
-$dbname= "shoppingsite";
+$username="root";
+$password="";
+$dbname= "amazonsite";
+
 $conn= new mysqli($servername, $username, $password, $dbname);
 
-$sql = "SELECT email, password FROM registerdetails WHERE email= '".$_POST['email']."'";
+$sql= "SELECT name, email, password FROM newregister where email= '".$_POST['email']."' ";
 $result= $conn->query($sql);
-$status= "Invalid";
+$status= "invalid email";
+$emailerror= "email does not exists";
+$conn->close();
 
-if($result->num_rows > 0){
-    $_SESSION['email'] = $_POST['email'];
+if($result->num_rows>0){
+    $_SESSION['email']= $_POST['email'];
+    $_SESSION['password']= $_POST['password'];
+    // $_SESSION['name'] = $_POST['name'];
+    // $_SESSION['mobile'] = $_POST['mobile'];
     $status= "valid";
-    if($status == "valid"){
-        header("location:dashboard.php");exit;
-        
 
+    if($status == "valid"){
+        header('location:dashboardform.php');exit;
     }
 }
 else{
-    header("location:registration.php");
+    header("location:registerform.php&&$emailerror");exit;
 }
+?>
 
 
-
-
-// $sql= "SELECT * FROM registerdetails WHERE email = '".$_POST['email']."'";
-
-
-// !empty($_SESSION['email']) && !empty($_SESSION['password'])
