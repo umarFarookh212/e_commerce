@@ -4,7 +4,7 @@
     <title>userRegistration</title>
     <link rel="stylesheet" href="registerform.css">
 </head>
-<body>
+<body class="img">
 <div class= "card">
     <div class="card-header"><h2>Register</h2></div>
     <div class="card-body">
@@ -15,7 +15,7 @@
     <input type="text" id= "mobile" name="mobile" placeholder= 'Mobile' class="input" >
     <input type="text"  id= "password" name="password" placeholder= 'password' class="input">
     <input type="text"  id= "cpassword" name="cpassword" placeholder= 're-type Password' class="input">
-    <input type="button" onclick= "test();" value= "Register " id="btnRegister" class="input">
+    <input type="button" onClick= "test();" value= "Register " id="btnRegister" class="input">
     </form>
     </div>
 </div>
@@ -24,14 +24,14 @@
 </body>
     <script>
         function test(){
-            let name= document.getElementById("name").value;
-            let email= document.getElementById("email").value;
-            let mobile= document.getElementById("mobile").value;
-            let password= document.getElementById("password").value;
-            let cpassword = document.getElementById("cpassword").value;
+            let name= document.querySelector("#name").value;
+            let email= document.querySelector("#email").value;
+            let mobile= document.querySelector("#mobile").value;
+            let password= document.querySelector("#password").value;
+            let cpassword = document.querySelector("#cpassword").value;
             let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         
-            if(email ==''){
+            if(email ==""){
                 alert("Enter Email");
                 return false;
             }
