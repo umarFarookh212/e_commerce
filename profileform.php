@@ -22,18 +22,23 @@ if($result->num_rows>0){
       body{
         margin:5rem 15rem 10rem;
         border: 2px solid black;
-        text-align:center;
+        text-align:center ;
+        color:rgb(63,23, 163);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.2rem;
       }
       input{
         margin: 10px;
         border: none;
-        width: 12rem;
-
+        width: 20rem;
+        font-size: 1rem;
       }
     </style>
   </head>
 <body>
-Email:<input type="text" value= "<?php echo $_SESSION['email'] ?> " readonly><br>
-Password:<input type="text" value= "<?php echo $_SESSION['password'] ?>" readonly>
+  Name:<input type="text" value= "<?php echo $_SESSION['name'] ?>" readonly><br>
+  Email:<input type="text" value= "<?php echo $_SESSION['email'] ?> " readonly><br>
+  Password:<input type="text" value= "<?php echo $_SESSION['password'] ?>" readonly><br>
+  Mobile:<input type="text" value= "<?php echo $_SESSION['mobile'] ?>" readonly><br>
 </body>
 </html>
