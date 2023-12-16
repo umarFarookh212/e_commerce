@@ -8,9 +8,9 @@
   background-image: url('register.jpg');
 
   width: 100px; 
-  height: 100vh;
+  height: 10rem;
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: cover; 
 }
 .card{
   border-top: 8px solid rgb(60, 76, 223);
