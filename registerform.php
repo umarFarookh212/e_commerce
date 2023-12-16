@@ -15,7 +15,7 @@
     <input type="text" id= "mobile" name="mobile" placeholder= 'Mobile' class="input" >
     <input type="text"  id= "password" name="password" placeholder= 'password' class="input">
     <input type="text"  id= "cpassword" name="cpassword" placeholder= 're-type Password' class="input">
-    <input type="button" onClick= "test();" value= "Register " id="btnRegister" class="input">
+    <input type="submit" onclick= "test();" value= "Register " id="btnRegister" class="input">
     </form>
     </div>
 </div>
@@ -56,6 +56,6 @@
                 return false;
             } 
             } 
-            document.getElementById("register").submit();
+            // document.getElementById("btnRegister").submit();
     </script>
 </html>
