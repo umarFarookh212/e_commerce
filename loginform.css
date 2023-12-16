@@ -5,12 +5,12 @@
   box-sizing: border-box;
 }
 .img{
-  width: 100%; 
-  height: 25rem;
-  background-image: url("register.jpg");
+  background-image: url('register.jpg');
+
+  width: 100px; 
+  height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center;
+  background-size: contain; 
 }
 .card{
   border-top: 8px solid rgb(60, 76, 223);
